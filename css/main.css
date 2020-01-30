@@ -114,9 +114,11 @@ ol {
   list-style: none;
   counter-reset: my-awesome-counter;
 }
+
 ol li {
   counter-increment: my-awesome-counter;
 }
+
 ol li::before {
   content: counter(my-awesome-counter);
   font-family: var(--font-secondary);
@@ -142,7 +144,7 @@ ol li::before {
 
 .banner-content {
   position: absolute;
-  font-weight: 700;
+  font-weight: bold;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -151,7 +153,7 @@ ol li::before {
 
 .banner-content h1 {
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .card {
@@ -172,7 +174,7 @@ ol li::before {
   border-color: var(--color-primary);
   background-color: rgba(256, 256, 256, 1);
   box-shadow: 7px 7px 0 var(--color-primary);
-  transition: ease-in-out .095s;
+  transition: ease-in-out 150ms;
 }
 
 .recipe-btn {
@@ -184,7 +186,7 @@ ol li::before {
 
 .sub {
   color: var(--color-secondary);
-  font-family: var(--font-secondary)
+  font-family: var(--font-secondary);
 }
 
 .search-input {
