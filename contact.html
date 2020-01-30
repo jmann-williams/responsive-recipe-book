@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Let It Dough</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kuw6tmx.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kuw6tmx.css">
+</head>
+<body>
+
+  <header class="grid fixed zindex-3 w-1 grid-middle" role="banner">
+    <nav class="unit island-1-2 pad-b-2 giga unit-xs-cenered unit-s-centered xs-1 s-1 m-1 l-1 nav-top" role="navigation" id="nav" tabindex="0">
+      <div class="icon text-center xs-1 s-1 m-1-4 l-1-4 i-48">
+        <img class="logo" src="images/lid-logo.svg" alt="logo">
+      </div>
+      <div class="unit right text-center xs-1 s-1 m-1-2 l-3-4">
+        <ul class="ib list-group-inline right push-r-2 v-align push-0">
+          <li class="kilo gutter-1-4"><a class="btn link-box" href="index.html">Home</a></li>
+          <li class="kilo gutter-1-4"><a class="btn link-box" href="recipes.html">Recipes</a></li>
+          <li class="kilo gutter-1-4"><a class="btn link-box" href="store.html">Store</a></li>
+          <li class="kilo gutter-1-4"><a class="btn link-box current" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container relative banner xs-1 s-1 m-1 l-1">
+      <div class="embed embed-16by9">
+        <img class="img-flex embed-item" src="images/banner-contact.jpg" alt="">
+      </div>
+      <div class="banner-content text-center pad-t-2">
+        <h1 class="tena text-center text-upper peta push-0 push-1-2 bold">Contact Us</h1>
+      </div>
+    </div>
+  </main>
+
+  <section class="grid wrapper" id="info" tabindex="0">
+      <div class="gutter-2 pad-t-2 unit" id="main-info" tabindex="0">
+        <h2 class="info giga push-0 push-2 text-center text-upper bold" id="heading" tabindex="0">Have Any Questions Or Want to Suggest A Recipe?</h2>
+        <form method="POST" action="https://formspree.io/jesse.mann.williams@gmail.com">
+          <div class="unit push xs-1 s-1 m-1-2 l-1-2 left gutter-1-4">
+            <label for="contact-name">First Name</label>
+            <input class="contact" id="contact-name" name="contact-name" required="">
+          </div>
+          <div class="unit push xs-1 s-1 m-1-2 l-1-2 right gutter-1-4">
+            <label for="last-name">Last Name</label>
+            <input class="contact" id="last-name" name="last-name" required="">
+          </div>
+          <div class="unit push w-1 gutter-1-4">
+            <label for="email">Email Address</label>
+            <input class="contact" id="email" type="email" placeholder="email@email.com" name="email" required="">
+          </div>
+          <div class="unit push w-1 gutter-1-4">
+            <label for="message">Message</label>
+            <textarea class="contact" id="message" name="message" required=""></textarea>
+          </div>
+          <div class="text-right pad-t-1-2 push-1-2">
+            <button class="btn milli btn-ghost push-1-2 gutter island-1-4" id="send" tabindex="0" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <div class="text-center">
+          <img class="icon i-128" src="images/lid-logo.svg" alt="logo">
+        </div>
+        <div class="text-center">
+          <nav>
+            <ul class="ib text-center unit-xs-cenered unit-s-centered list-group-inline v-align push-0">
+              <li class="kilo gutter-1-4"><a class="btn link-box" href="index.html">Home</a></li>
+              <li class="kilo gutter-1-4"><a class="btn link-box" href="recipes.html">Recipes</a></li>
+              <li class="kilo gutter-1-4"><a class="btn link-box" href="store.html">Store</a></li>
+              <li class="kilo gutter-1-4"><a class="btn link-box" href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="social list-group-inline pad-t">
+              <li class="icon i-32 gutter"><a href="https://www.instagram.com/jmann.design/"><img src="images/01-social/instagram.svg" alt="Instagram"></a></li>
+              <li class="icon i-32 gutter"><a href="https://www.youtube.com/channel/UCn0-G5ti8D7kJn01y_g2_Lg"><img src="images/01-social/youtube.svg" alt="YouTube"></a></li>
+              <li class="icon i-32 gutter"><a href="https://www.instagram.com/jmann.design/"><img src="images/01-social/facebook.svg" alt="Facebook"></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="text-center pad-t-1-2 pad-b">
+          <small class="copyright">Copyright © Let It Dough Foods</small>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
