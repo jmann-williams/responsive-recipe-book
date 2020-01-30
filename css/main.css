@@ -1,0 +1,204 @@
+:root {
+  --color-primary: #c95459;
+  --color-primary-o: rgba(201, 84, 89, .08);
+  --color-secondary: #cc7f3d;
+  --color-tertiary: #ffe6b0;
+  --color-neutral-1: #292929;
+  --color-neutral-2: #e4e4e4;
+  --font-primary: "Proxima Nova", sans-serif;
+  --font-secondary: "poynter-oldstyle-display", serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+}
+
+h2 {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+}
+
+h3 {
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+}
+
+nav {
+  background-color: #fff;
+}
+
+.nav-top {
+  box-shadow: 0 0 20px rgba(47, 67, 110, .1);
+}
+
+nav a {
+  color: var(--color-neutral-1);
+  border: 0;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 1px;
+  color: var(--color-neutral-1);
+  border: none;
+  transition: ease-in-out .15s;
+}
+
+.btn:hover {
+  color: var(--color-neutral-2);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.current {
+  color: var(--color-primary);
+  border: solid 2px var(--color-primary);
+}
+
+.current:hover {
+  color: var(--color-neutral-2);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 2px #fff;
+}
+
+.optional {
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+.ingredients {
+  background-color: var(--color-primary-o);
+}
+
+.hover-box {
+  color: #fff;
+}
+
+.hover-box h2 {
+  color: #fff;
+  font-family: var(--font-primary);
+  font-weight: bold;
+}
+
+.hover-box-caption {
+  bottom: -4em;
+  transition: all .2s ease-in-out;
+}
+
+.hover-box:hover .hover-box-caption,
+.hover-box:focus .hover-box-caption {
+  bottom: 10%;
+}
+
+.hover-box-img {
+  filter: grayscale(0);
+  transition: all .2s ease-in-out;
+}
+
+.hover-box:hover .hover-box-img,
+.hover-box:focus .hover-box-img {
+  filter: brightness(.7) blur(2px);
+  transform: scale(1.05);
+}
+
+.hover-box:focus {
+  z-index: 10;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  font-family: var(--font-secondary);
+  font-size: 1.35em;
+  color: var(--color-secondary);
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  top: 50%;
+  max-height: 30em;
+  overflow: hidden;
+  bottom: 50%;
+}
+
+.container-2 {
+  top: 50%;
+  max-height: 20em;
+  overflow: hidden;
+  bottom: 50%;
+}
+
+.banner-content {
+  position: absolute;
+  font-weight: 700;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fcfcfc;
+}
+
+.banner-content h1 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.card:hover {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: ease-in-out .2s;
+}
+
+.card:hover .recipe-btn {
+  border: solid 2px;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background-color: rgba(256, 256, 256, 1);
+  box-shadow: 7px 7px 0 var(--color-primary);
+  transition: ease-in-out .095s;
+}
+
+.recipe-btn {
+  border: solid 2px var(--color-primary);
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  color: #fcfcfc;
+}
+
+.sub {
+  color: var(--color-secondary);
+  font-family: var(--font-secondary)
+}
+
+.search-input {
+  border: solid 2px rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .5);
+  padding-left: 1.5em;
+}
+
+form label {
+  color: var(--color-primary);
+  font-size: .9rem;
+}
+
+.news h1,
+.news p {
+  color: var(--color-primary);
+}
